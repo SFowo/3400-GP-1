@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8640839039167604000}
   - component: {fileID: 4905359001190478199}
   m_Layer: 0
-  m_Name: Light
+  m_Name: LightSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33989,7 +33989,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 70
+  m_VersionIndex: 76
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -34471,7 +34471,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 20
+  m_VersionIndex: 26
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -34490,7 +34490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Shape:
     rid: 7730579864838471722
-  m_Size: {x: 10, y: 1, z: 5}
+  m_Size: {x: 0.2, y: 0.7, z: 0.2}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_PivotLocation: 1
   m_PivotPosition: {x: 0, y: 0, z: 0}
