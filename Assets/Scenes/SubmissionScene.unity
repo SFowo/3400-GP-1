@@ -1668,6 +1668,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61838156408029000, guid: 198b2e9bc0be0564ea1af2ba4d061442, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 420566257129107589, guid: 198b2e9bc0be0564ea1af2ba4d061442, type: 3}
       propertyPath: orientation
       value: 
@@ -6167,6 +6171,10 @@ PrefabInstance:
     - target: {fileID: 130163785671248127, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615855084738823566, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.667
       objectReference: {fileID: 0}
     - target: {fileID: 7556701337163862432, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_Name
