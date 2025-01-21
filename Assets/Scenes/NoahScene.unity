@@ -400,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash
       objectReference: {fileID: 0}
+    - target: {fileID: 6321983937258303964, guid: a1a96c3833c205647ac58c2e7fe7e55a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f6f57127c9c2ed47a6570b41f4190a3, type: 2}
     - target: {fileID: 8422258499005256565, guid: a1a96c3833c205647ac58c2e7fe7e55a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.16
