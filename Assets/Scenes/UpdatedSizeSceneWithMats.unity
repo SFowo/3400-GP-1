@@ -2100,15 +2100,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7998681804658063561, guid: a4af33ec9bd48734c9b0c43e039c74c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1991
+      value: 1.2506
       objectReference: {fileID: 0}
     - target: {fileID: 7998681804658063561, guid: a4af33ec9bd48734c9b0c43e039c74c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.61695
+      value: -0.61643344
       objectReference: {fileID: 0}
     - target: {fileID: 7998681804658063561, guid: a4af33ec9bd48734c9b0c43e039c74c6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.7058
+      value: -4.5725
       objectReference: {fileID: 0}
     - target: {fileID: 7998681804658063561, guid: a4af33ec9bd48734c9b0c43e039c74c6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11503,15 +11503,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130163785671248127, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.3189096
+      value: 8.7632
       objectReference: {fileID: 0}
     - target: {fileID: 130163785671248127, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.902
+      value: 0.90344626
       objectReference: {fileID: 0}
     - target: {fileID: 130163785671248127, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.2970586
+      value: -1.1176
       objectReference: {fileID: 0}
     - target: {fileID: 130163785671248127, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11541,8 +11541,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 185982842028108065, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112627872112394737, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551531444734108542, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7556701337163862432, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556701337163862432, guid: b07c82a2abe2ef74ba953a9868536610, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -21921,15 +21937,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7748888952847954946, guid: 5a52e0bb7d477aa499094cb886487d6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.949
+      value: 7.1472
       objectReference: {fileID: 0}
     - target: {fileID: 7748888952847954946, guid: 5a52e0bb7d477aa499094cb886487d6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.13999999
+      value: -0.13855374
       objectReference: {fileID: 0}
     - target: {fileID: 7748888952847954946, guid: 5a52e0bb7d477aa499094cb886487d6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.797
+      value: -2.3035998
       objectReference: {fileID: 0}
     - target: {fileID: 7748888952847954946, guid: 5a52e0bb7d477aa499094cb886487d6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23534,6 +23550,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46063035d2b4b24418aa8a51bb56ecad, type: 2}
+    - target: {fileID: 7497256313635385580, guid: a1a96c3833c205647ac58c2e7fe7e55a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8422258499005256565, guid: a1a96c3833c205647ac58c2e7fe7e55a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33417726
