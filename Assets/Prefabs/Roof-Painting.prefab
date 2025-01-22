@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4054419581921851745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.319067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.287498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8491058879506308839, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c06f2164c705fbb4bb43d09b49eec502, type: 2}
+    - target: {fileID: -379474401574450456, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c06f2164c705fbb4bb43d09b49eec502, type: 2}
+    - target: {fileID: -343812537798403443, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5a1a82fa06bf3c549b7b99673e7d22d9, type: 2}
+    - target: {fileID: 919132149155446097, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_Name
+      value: Roof-Painting
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482084108698933046, guid: e0eaa9398539f954792f39359d798797, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17321b0fc8a7d38429371b95da941dda, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0eaa9398539f954792f39359d798797, type: 3}
