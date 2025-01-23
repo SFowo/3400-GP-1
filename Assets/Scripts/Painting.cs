@@ -6,6 +6,7 @@ using UnityEngine;
 public class Painting : MonoBehaviour
 {
     public Transform player;
+    public Transform orientation;
     public float maxDistance;
 
     public float maxRotation;
@@ -26,7 +27,7 @@ public class Painting : MonoBehaviour
 
     private void Update()
     {
-        if (Mathf.Sqrt(Mathf.Pow(player.position.x - tf.position.x, 2) + Mathf.Pow(player.position.z - tf.position.z, 2)) < maxDistance && player.rotation.z < maxRotation && player.rotation.z > minRotation)
+        if (Vector3.Distance(player.position, tf.position) <= maxDistance && orientation.eulerAngles.y > minRotation && orientation.eulerAngles.y < maxRotation)
         {
             canvas.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
