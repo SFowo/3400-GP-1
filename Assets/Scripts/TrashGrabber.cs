@@ -8,7 +8,7 @@ public class TrashGrabber : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        sceneManager?.IncrementCollectables();
+        sceneManager?.IncrementScore(SceneManager.ScoreType.Collectables);
         gameObject.SetActive(false);
     }
 }
