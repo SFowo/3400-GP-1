@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class CameraDetection : MonoBehaviour
 {
-    [SerializeField] private SceneManager sceneManager;
+    [SerializeField] private LevelManager sceneManager;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("CameraFOV"))
         {
-            sceneManager?.IncrementScore(SceneManager.ScoreType.Detected);
+            sceneManager?.IncrementScore(LevelManager.ScoreType.Detected);
             Debug.Log("Player is caught!");
         }
     }

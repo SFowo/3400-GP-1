@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneManager : MonoBehaviour
+public class LevelManager: MonoBehaviour
 {
     private int collectables;
     private int paintings;

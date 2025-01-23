@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class TrashGrabber : MonoBehaviour
 {
-    [SerializeField] private SceneManager sceneManager;
+    [SerializeField] private LevelManager sceneManager;
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
 
-        sceneManager?.IncrementScore(SceneManager.ScoreType.Collectables);
+        sceneManager?.IncrementScore(LevelManager.ScoreType.Collectables);
         gameObject.SetActive(false);
     }
 }
