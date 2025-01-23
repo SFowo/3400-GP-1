@@ -1,15 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TrashGrabber : MonoBehaviour
 {
-    public void OnTriggerEnter(Collider other)
+    [SerializeField] private SceneManager sceneManager;
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            this.gameObject.SetActive(false);
-        }
+        if (!other.CompareTag("Player")) return;
+
+        sceneManager?.IncrementCollectables();
+        gameObject.SetActive(false);
     }
 }

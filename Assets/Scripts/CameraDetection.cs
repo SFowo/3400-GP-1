@@ -9,13 +9,4 @@ public class CameraDetection : MonoBehaviour
             Debug.Log("Player is caught!");
         }
     }
-
-    void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("CameraFOV"))
-        {
-            Debug.Log("Player is caught!");
-        }
-    }
-
 }
