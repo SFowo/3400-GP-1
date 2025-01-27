@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.L))
         {
-            FindObjectOfType<ShutdownBehavior>().TriggerShutoff();
+            FindObjectOfType<ShutdownBehavior>()?.TriggerShutoff();
         }
     }
 
