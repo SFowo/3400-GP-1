@@ -180,7 +180,6 @@ GameObject:
   - component: {fileID: 130163785671248127}
   - component: {fileID: 7030396858191131442}
   - component: {fileID: 5820854555931436919}
-  - component: {fileID: 5508947644278236020}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -245,20 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97221bb965935844292bf5d3feadef01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  sprintSpeed: 10
+  walkSpeed: 2
+  sprintSpeed: 6
   groundDrag: 5
   orientation: {fileID: 3497127844569100544}
---- !u!114 &5508947644278236020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7556701337163862432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5186c2731dc5a7f4abefea910e4d58eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneManager: {fileID: 0}
