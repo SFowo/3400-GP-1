@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ShutdownBehavior : MonoBehaviour
 {
+    public AudioSource zombieScream;
     public float startingTimeBetween = 2;
     public float timeBetweenIncrement = 0.2f;
     public float minTimeBetween = 0.2f;
@@ -23,6 +24,7 @@ public class ShutdownBehavior : MonoBehaviour
 
     private IEnumerator ShutoffLights()
     {
+        zombieScream.Play();
         float delay = startingTimeBetween;
 
         foreach (ShutoffBehavior light in lights)
