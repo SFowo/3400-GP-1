@@ -34,11 +34,6 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
         SpeedControl();
-
-        if (Input.GetKey(KeyCode.L))
-        {
-            FindObjectOfType<ShutdownBehavior>()?.TriggerShutoff();
-        }
     }
 
     private void FixedUpdate()
