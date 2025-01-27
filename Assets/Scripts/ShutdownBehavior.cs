@@ -12,8 +12,7 @@ public class ShutdownBehavior : MonoBehaviour
 
     private void Start()
     {
-        lights = FindObjectsOfType<ShutoffBehavior>();
-        List<ShutoffBehavior> sortedLights = lights.OrderBy(light => light.name).ToList();
+        lights = FindObjectsOfType<ShutoffBehavior>().OrderBy(light => light.name).ToArray();
 
     }
 
