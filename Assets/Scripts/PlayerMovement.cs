@@ -74,4 +74,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
+
+    public void StartPlayerDeath()
+    {
+        walkSpeed = 0f;
+        sprintSpeed = 0f;
+    }
 }

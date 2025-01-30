@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShutdownTrigger : MonoBehaviour
 {
     private bool triggered = false;
+    public GameObject quote;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class ShutdownTrigger : MonoBehaviour
         if (collider.CompareTag("Player") && !triggered)
         {
             FindObjectOfType<ShutdownBehavior>()?.TriggerShutoff();
+            quote.SetActive(false);
             triggered = true;
         }
         
