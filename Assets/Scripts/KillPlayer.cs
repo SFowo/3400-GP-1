@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KillPlayer : MonoBehaviour
 {
@@ -11,6 +12,14 @@ public class KillPlayer : MonoBehaviour
             FindObjectOfType<ColorLerper>()?.startPOVChange();
             FindObjectOfType<PlayerCam>()?.StartPlayerDeath();
             FindObjectOfType<PlayerMovement>()?.StartPlayerDeath();
+            StartCoroutine(ReloadLevelAfterDelay(5f));
         }
     }
+
+    private IEnumerator ReloadLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
