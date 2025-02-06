@@ -10,7 +10,7 @@ public class ColorLerper : MonoBehaviour
     public Color targetColor = Color.red;
     private bool isLerpingToRed = true;
     private float lerpTime;
-    private bool isLerpingActive = true; // Flag to control lerping
+    private bool isLerpingActive = true;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class ColorLerper : MonoBehaviour
 
     void Update()
     {
-        if (!isLerpingActive) return; // Stop lerping when shutdown starts
+        if (!isLerpingActive) return;
 
         lerpTime += Time.deltaTime / lerpDuration;
 
@@ -43,7 +43,6 @@ public class ColorLerper : MonoBehaviour
         }
     }
 
-    // Method to stop lerping effect
     public void StopLerping()
     {
         isLerpingActive = false;

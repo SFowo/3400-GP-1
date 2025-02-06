@@ -1,20 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     private static readonly int Open = Animator.StringToHash("Open");
     [SerializeField] private Text timerText;
     [SerializeField] private Animator shutDownButtonAnimator;
-    [SerializeField] private GameObject[] windowCovers;
     [SerializeField] private GameObject[] inventoryKeys;
-    
+    [SerializeField] private GameObject[] covers;
+    [SerializeField] private GameObject[] windows;
+
     [SerializeField] private GameObject keyInformText;
+    [SerializeField] private AudioSource laserAudioSource;
 
     private bool shutdown;
-    private bool isTimerActive = true; // Control timer activity
+    private bool isTimerActive = true;
 
-    private float timeRemaining = 59.99f;
+    public float timeRemaining = 59.99f;
 
     private void Update()
     {
@@ -33,7 +36,6 @@ public class GameManager : MonoBehaviour
 
         if (shutdown)
         {
-            // Additional logic if needed when shutdown is active
         }
     }
 
@@ -46,7 +48,52 @@ public class GameManager : MonoBehaviour
 
     private void StartKillProcess()
     {
-        // Logic when timer reaches zero
+        StopTerrainMovement();
+
+        StartCoroutine(MoveCoversToWindows());
+    }
+
+    private System.Collections.IEnumerator MoveCoversToWindows()
+    {
+        for (int i = 0; i < covers.Length; i++)
+        {
+            if (i < windows.Length && covers[i] != null && windows[i] != null)
+            {
+                Transform cover = covers[i].transform;
+                Transform window = windows[i].transform;
+
+                Vector3 targetPosition = new Vector3(cover.position.x, window.position.y, cover.position.z);
+                float duration = 2f;
+                float elapsed = 0f;
+
+                Vector3 startPosition = cover.position;
+
+                while (elapsed < duration)
+                {
+                    elapsed += Time.deltaTime;
+                    float t = elapsed / duration;
+                    cover.position = Vector3.Lerp(startPosition, targetPosition, t);
+                    yield return null;
+                }
+
+                cover.position = targetPosition;
+
+                yield return new WaitForSeconds(0.5f);
+            }
+        }
+
+        if (laserAudioSource != null)
+        {
+            laserAudioSource.Play();
+
+            StartCoroutine(RestartLevelAfterDelay(10f));
+        }
+    }
+
+    private System.Collections.IEnumerator RestartLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        RestartLevel();
     }
 
     private void StartShutDownProcess()
@@ -54,7 +101,16 @@ public class GameManager : MonoBehaviour
         if (!shutdown)
         {
             shutdown = true;
-            shutDownButtonAnimator.SetTrigger(Open); 
+            shutDownButtonAnimator.SetTrigger(Open);
+        }
+    }
+
+    private void StopTerrainMovement()
+    {
+        RobotWalkSimulation[] walkSimulations = FindObjectsOfType<RobotWalkSimulation>();
+        foreach (RobotWalkSimulation simulation in walkSimulations)
+        {
+            simulation.StopSimulation();
         }
     }
 
@@ -87,10 +143,8 @@ public class GameManager : MonoBehaviour
 
     public void StartShutDownCinematic()
     {
-        // Stop the timer
         isTimerActive = false;
 
-        // Stop monitors
         GameObject[] monitors = GameObject.FindGameObjectsWithTag("Monitor");
         foreach (GameObject monitor in monitors)
         {
@@ -101,21 +155,19 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        // Stop terrain movement and stomp audio
-        RobotWalkSimulation[] walkSimulations = FindObjectsOfType<RobotWalkSimulation>();
-        foreach (RobotWalkSimulation simulation in walkSimulations)
-        {
-            simulation.StopSimulation();
-        }
+        StopTerrainMovement();
 
-        // Stop all color lerping effects
         ColorLerper[] colorLerpers = FindObjectsOfType<ColorLerper>();
         foreach (ColorLerper lerper in colorLerpers)
         {
             lerper.StopLerping();
         }
 
-        // Other cinematic effects can be added here
+        StartCoroutine(RestartLevelAfterDelay(5f));
     }
 
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

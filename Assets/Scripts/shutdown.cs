@@ -7,7 +7,7 @@ public class Shutdown : MonoBehaviour
     [SerializeField] private GameObject key2;
     [SerializeField] private GameObject key3;
 
-    [SerializeField] private GameManager gameManager; // Reference to the GameManager
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject informText;
 
     private bool isPlayerInTrigger;

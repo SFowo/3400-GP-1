@@ -18,10 +18,8 @@ public class TurnMonitorOff : MonoBehaviour
     {
         if (objectRenderer != null)
         {
-            // Use the instance of the material
             Material material = objectRenderer.material;
 
-            // Check if the material has the "_BaseColor" property for URP
             if (material.HasProperty("_BaseColor"))
             {
                 material.shader = Shader.Find("Unlit/Color");
