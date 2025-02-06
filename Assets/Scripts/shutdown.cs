@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shutdown : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Shutdown : MonoBehaviour
     [SerializeField] private GameObject key3;
 
     [SerializeField] private GameManager gameManager; // Reference to the GameManager
+    [SerializeField] private GameObject informText;
 
     private bool isPlayerInTrigger;
 
@@ -15,6 +17,7 @@ public class Shutdown : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = true;
+            informText.SetActive(true);
         }
     }
 
@@ -23,6 +26,7 @@ public class Shutdown : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = false;
+            informText.SetActive(false);
         }
     }
 

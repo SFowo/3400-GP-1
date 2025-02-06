@@ -20,6 +20,7 @@ public class RobotWalkSimulation : MonoBehaviour
     private Vector3 initialPosition;
     private float audioLength;
     private float distanceTraveled = 0f;
+    private bool isActive = true; 
 
     void Start()
     {
@@ -37,6 +38,8 @@ public class RobotWalkSimulation : MonoBehaviour
 
     void Update()
     {
+        if (!isActive) return; 
+
         distanceTraveled += forwardSpeed * Time.deltaTime;
 
         if (stompAudio.isPlaying)
@@ -57,6 +60,15 @@ public class RobotWalkSimulation : MonoBehaviour
             newPos.y = initialPosition.y + bounceOffset;
 
             transform.position = newPos;
+        }
+    }
+
+    public void StopSimulation()
+    {
+        isActive = false;
+        if (stompAudio.isPlaying)
+        {
+            stompAudio.Stop();
         }
     }
 }
