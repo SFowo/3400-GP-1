@@ -35,7 +35,6 @@ Material:
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
-  - DepthOnly
   - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
@@ -63,29 +62,30 @@ Material:
     - _Cull: 2
     - _DstBlend: 10
     - _Emission: 0
-    - _Form_Offset: -0.32
+    - _Form_Offset: -0.72
     - _Matelic: 0.21
-    - _Noise_NormalStrength: 0.93
-    - _Normal_Strength: 7.42
+    - _Noise_NormalStrength: 7.36
+    - _Normal_Strength: 14.91
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RippleSpeed: 0.67
-    - _Ripple_Dissolve: 2.6
-    - _Ripple_Scale: -19.55
-    - _Smoothness: 0.84
+    - _Ripple_Dissolve: 0.15
+    - _Ripple_Scale: 20
+    - _Smoothness: 0.16
     - _SrcBlend: 5
     - _Surface: 1
     - _Transparent: -0.54
     - _WorkflowMode: 1
     - _ZTest: 4
-    - _ZWrite: 0
-    - _ZWriteControl: 0
+    - _ZWrite: 1
+    - _ZWriteControl: 1
     m_Colors:
-    - _BaseColor: {r: 0.0017997543, g: 0.03853864, b: 0.08176088, a: 1}
+    - _BaseColor: {r: 0, g: 0.09267406, b: 0.13207549, a: 1}
     - _Emission_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Form_Density: {r: 1, g: 1, b: 1, a: 1}
     - _Normal_Speed: {r: 0.02, g: 0.06, b: 0, a: 0}
-    - _Position: {r: 0, g: 0.05, b: 0, a: 0}
+    - _Position: {r: 0, g: 0.06, b: 0, a: 0}
     - _Ripple_Color: {r: 0.007843138, g: 0.007843138, b: 0.007843138, a: 1}
+    - _Wave_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_BuildTextureStacks: []
