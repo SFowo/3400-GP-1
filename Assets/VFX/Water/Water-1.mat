@@ -85,7 +85,7 @@ Material:
     - _Emission_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Form_Density: {r: 1, g: 1, b: 1, a: 1}
     - _Normal_Speed: {r: 0.02, g: 0.06, b: 0, a: 0}
-    - _Position: {r: 0, g: 0.06, b: 0, a: 0}
+    - _Position: {r: 0, g: 0.31, b: 0, a: 0}
     - _Ripple_Color: {r: 0.007843138, g: 0.007843138, b: 0.007843138, a: 1}
     - _Wave_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_BuildTextureStacks: []
